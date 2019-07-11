@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Lord</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="create">create</string>
+    <string name="your_notes">your notes</string>
+    <string name="project_name">Project name:</string>
+    <string name="create_n_your_n_notebook">CREATE   YOUR   NOTEBOOK</string>
+    <string name="todo">TODO</string>
+</resources>

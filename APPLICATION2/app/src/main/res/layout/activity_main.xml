@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавить"
+        android:onClick="add"
+        android:textSize="18dp"/>
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/button_list"
+        android:layout_width="209dp"
+        android:layout_height="80dp"
+        android:layout_gravity="top|left"
+        android:background="#3d3d3d"
+        android:onClick="change"
+        android:text="list"
+        android:textColor="#DEDEDE"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_user"
+        android:layout_width="209dp"
+        android:layout_height="80dp"
+        android:layout_gravity="top|right"
+        android:background="#3d3d3d"
+        android:onClick="change"
+        android:text="add"
+        android:textColor="#DEDEDE"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <fragment
+        android:name="com.example.application.Fragment_list"
+        android:id="@+id/fragment_space"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="0dp"
+        android:layout_height="653dp"
+        android:layout_marginTop="80dp" />
+
+</FrameLayout>

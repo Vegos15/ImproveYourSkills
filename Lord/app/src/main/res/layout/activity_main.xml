@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color_white"
+
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/button_sign_up"
+        android:layout_width="204dp"
+        android:layout_height="75dp"
+        android:background="@drawable/color_gray"
+        android:onClick="change"
+        android:padding="10dp"
+        android:text="@string/create"
+        android:textColor="#F0F0F0"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/fr_shape"
+        app:layout_constraintEnd_toStartOf="@+id/button_sign_in"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_sign_in"
+        android:layout_width="204dp"
+        android:layout_height="75dp"
+        android:background="@drawable/color_gray"
+        android:onClick="change"
+        android:padding="10dp"
+        android:text="@string/your_notes"
+        android:textColor="#F0F0F0"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/fr_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_sign_up"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <fragment
+        android:id="@+id/fr_shape"
+        android:name="com.example.lord.Fragment_1"
+        android:layout_width="404dp"
+        android:layout_height="624dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_sign_up"
+        tools:layout="@layout/fragment_fragment_1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
